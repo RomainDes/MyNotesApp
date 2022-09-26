@@ -18,6 +18,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.content.SharedPreferences;
 import android.content.Context;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 sharedPreferences.edit().putStringSet("name", noteSet).apply();
                                 sharedPreferences.edit().putStringSet("body", bodySet).apply();
-
+                                Toast.makeText(MainActivity.this, "Note has been deleted", Toast.LENGTH_LONG).show();
                                 if(nameNotes.isEmpty() || nameNotes == null){
                                     emptyTv.setVisibility(View.VISIBLE);
                                 }
