@@ -8,6 +8,7 @@
     >
 
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/rowNote"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:contentPadding="10dp"
@@ -16,20 +17,31 @@
         app:cardBackgroundColor="#808080"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:theme="@style/Theme.MaterialComponents.Light">
+        android:theme="@style/Theme.MaterialComponents.Light"
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/notesTV"
+                android:id="@+id/nameTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Exemple Note"
                 android:textStyle="bold"
-                android:layout_gravity="center"
+                android:layout_gravity="left"
                 android:textColor="@color/white"
                 android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/bodyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="body note"
+                android:textStyle="italic"
+                android:layout_gravity="left"
+                android:textColor="@color/white"
+                android:textSize="15dp"
                 />
         </LinearLayout>
 

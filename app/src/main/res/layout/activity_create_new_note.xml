@@ -12,7 +12,7 @@
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:hint="Nom de la note"
@@ -20,7 +20,8 @@
         android:textColor="@color/white"
         android:textColorHint="#808080"
         android:textSize="40dp"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:layout_weight="1"/>
 
     <EditText
         android:id="@+id/body"
@@ -31,35 +32,37 @@
         android:padding="20dp"
         android:textColor="@color/white"
         android:textColorHint="#808080"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:layout_weight="4"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/cancel"
-            android:layout_width="120dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="25dp"
-            android:background="#FFA500"
-            android:hint="Cancel" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_keyboard_return_24"
+            android:textColorHint="@color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/save"
-            android:layout_width="116dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="25dp"
-            android:background="#FFA500"
-            android:hint="Save" />
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_save_24" />
     </LinearLayout>
 
 
